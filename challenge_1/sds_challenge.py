@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-# file_path = "\challenge_1" 
+# file_path = "\challenge_1"
 win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
 mac_path = "~/Projects/sds_challenge/challenge_1/data/public_flights.csv"
 df = pd.read_csv(mac_path)
@@ -22,5 +22,5 @@ print(df.info())
 
 df['CANCELLED'].value_counts()
 
-a = np.array([12,3,5])
-
+a = np.array([12, 3, 5])
+b = np.array([3, 4, 5])
