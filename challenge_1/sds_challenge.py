@@ -9,7 +9,9 @@ import numpy as np
 import pandas as pd
 
 # file_path = "\challenge_1" 
-df = pd.read_csv("D:\Learning\Projects\sds_challenges\challenge_1\data\public_flights.csv")
+win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
+mac_path = "~/Projects/sds_challenge/challenge_1/data/public_flights.csv"
+df = pd.read_csv("~/Projects/sds_challenge/challenge_1/data/public_flights.csv")
 
 print(df.columns)
 

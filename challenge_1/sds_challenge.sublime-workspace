@@ -1,0 +1,364 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Use",
+				"UserSchema"
+			],
+			[
+				"ios",
+				"iostream\tstandard header"
+			],
+			[
+				"train_im",
+				"train_images"
+			],
+			[
+				"train",
+				"train_labels"
+			],
+			[
+				"test",
+				"test_images"
+			],
+			[
+				"predi",
+				"prediction"
+			],
+			[
+				"drop",
+				"Dropout"
+			],
+			[
+				"input",
+				"input_shape"
+			],
+			[
+				"Conv",
+				"Conv2D"
+			],
+			[
+				"epo",
+				"epoch"
+			],
+			[
+				"p_",
+				"p_test"
+			],
+			[
+				"eval",
+				"eval_result"
+			],
+			[
+				"ima",
+				"ImageDataGenerator"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/test/update_test.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/test/delete_test.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/test/reading_test.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/test/create_test.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/test/test_helper.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/package.json",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/EECS-484-Project-1/loadData.sql",
+		"/Users/kyutcho/Desktop/temp.py",
+		"/Users/kyutcho/Desktop/etl.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/EECS-484-Project-1/createTables.sql",
+		"/Users/kyutcho/Desktop/drop_tables.py",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/untitled",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query6.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query5.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/model_CNN.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/model_PCA.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/cw_ver.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/3/modules/svhn_classification.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Spring 2018/EECS 281/Project/Project 3/logman.h",
+		"/Users/kyutcho/Desktop/University of Michigan/Spring 2018/EECS 281/Project/Project 3/logman.cpp",
+		"/Users/kyutcho/Desktop/University of Michigan/Spring 2018/EECS 281/Project/Project 4/zookeeper.h",
+		"/Users/kyutcho/Desktop/University of Michigan/Spring 2018/EECS 281/Project/Project 4/zookeeper.cpp",
+		"/Users/kyutcho/Downloads/By Category.svg",
+		"/Users/kyutcho/Desktop/Learning/Udemy/mongoDB/users/src/user.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/project2/StudentFakebookOracle.java",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/GetData.java",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/Main.java",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/sample.json",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query1.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query2.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query5.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query3.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query1.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query4.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query7.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query8.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query9.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query3.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project-2/Query2.sql",
+		"/Users/kyutcho/Desktop/temp.cpp",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query8.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query7.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query6.js",
+		"/Users/kyutcho/Desktop/Learning/Udemy/SparkCourse/Hello.java",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project3/query4.js",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/EECS-484-Project-1/createViews.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/EECS-484-Project-1/dropViews.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/EECS-484-Project-1/dropTables.sql",
+		"/Users/kyutcho/Desktop/Hello.java",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/3/modules/dig_struct.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/4/hw4.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/3/modules/hw3p3.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/example code/eigenfaces_example.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/cnn.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/project.pbs",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/main_code.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/model.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/model.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/code.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/hiragana_in_data.jpg",
+		"/Users/kyutcho/Desktop/own_work.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/test_images.txt",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_9.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_5.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_4.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_3.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_2.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_1.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final_sub/eig_vec_0.png",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/final submission/main_code.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/Project/eecs442-finalproject/main.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project4/dvd_store_data/pgsqlds2_create_trig.sql",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 484/Project/eecs-484-project4/dvd_store_data/pgsqlds2_create_ind.sql",
+		"/Users/kyutcho/.bash_profile",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/1/modules/calculate_potts_energy.py",
+		"/Users/kyutcho/temp.sh",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/2/modules/bilinear_interp.py",
+		"/Users/kyutcho/Desktop/University of Michigan/Fall 2018/EECS 442/HW/2/requests/bilinear_interp_request.json",
+		"/Users/kyutcho/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/kyutcho/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 128.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "sds_challenge.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
