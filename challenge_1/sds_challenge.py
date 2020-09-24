@@ -13,23 +13,29 @@ import matplotlib.pyplot as plt
 # file_path = "\challenge_1"
 win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
 mac_path = "~/Projects/sds_challenge/challenge_1/data/public_flights.csv"
-df = pd.read_csv(win_path)
+flight = pd.read_csv(win_path)
 
-print(df.columns)
+print(flight.columns)
 
-print(df.info())
-
-# sns.distplot(df['DISTANCE']);
+print(flight.info())
 
 # EDA
 
-# Cancelled
-df["CANCELLED"].value_counts()[0]
-g = sns.countplot(data = df, x = "CANCELLED")
-print(type(g))
+# function to print 
+def autolabel(rects):
+    for i, p in enumerate(rects.patches):
+        height = p.get_height()
+        rects.text(p.get_x()+p.get_width()/2., height + 0.2,\
+            flight["CANCELLED"].value_counts()[i], ha = "center")
 
-plt.annotate(str(df["CANCELLED"].value_counts()[0]), )
+# VARIABLE: CANCELLED
+flight["CANCELLED"].value_counts()
+ax = sns.countplot(data = flight, x = "CANCELLED")
 
-sns.catplot(data = df, x = "YEAR", kind = "count")
-df["YEAR"].value_counts()
+# Barplot with labels on top
+autolabel(ax)
+
+
+# VARIABLE: YEAR
+flight["YEAR"].value_counts()
 
