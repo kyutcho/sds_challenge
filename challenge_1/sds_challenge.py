@@ -28,14 +28,30 @@ def autolabel(rects):
         rects.text(p.get_x()+p.get_width()/2., height + 0.2,\
             flight["CANCELLED"].value_counts()[i], ha = "center")
 
+
 # VARIABLE: CANCELLED
 flight["CANCELLED"].value_counts()
-ax = sns.countplot(data = flight, x = "CANCELLED")
 
 # Barplot with labels on top
+ax = sns.countplot(data = flight, x = "CANCELLED")
 autolabel(ax)
 
+flight.isnull().sum()
+
+
+def missing_value_table(df):
+    mis_val = df.isnull().sum()
+    mis_val_pct = df.isnull().sum() * 100 / len(df)
+    
+    # concatenate two columns
+    mis_val_tbl = pd.concat([mis_val, mis_val_pct], axis = 1)
+    
+    # Rename columns 
+    mis_val_tbl = mis_val_tbl.rename(columns = {"0":"num NAs", "1", ""})
+    
+    print(mis_val_tbl)
+    
+    
 
 # VARIABLE: YEAR
 flight["YEAR"].value_counts()
-
