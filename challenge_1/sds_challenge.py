@@ -20,6 +20,27 @@ print(flight.columns)
 print(flight.info())
 
 # EDA
+def missing_value_table(df):
+    mis_val = df.isnull().sum()
+    mis_val_pct = round(df.isnull().sum() * 100 / len(df), 2)
+    
+    # concatenate two columns
+    mis_val_tbl = pd.concat([mis_val, mis_val_pct], axis = 1)
+    
+    # Rename columns 
+    mis_val_tbl = mis_val_tbl.rename(columns = {0:"num NAs", 1:"pct NAs"})
+    
+    print(mis_val_tbl)
+    
+missing_value_table(flight)
+
+# Explore column types
+flight.dtypes.value_counts()
+
+# Find unique values of each categorical columns
+flight.select_dtypes('object').apply(pd.Series.nunique, axis = 0)
+
+
 
 # function to print 
 def autolabel(rects):
@@ -39,18 +60,7 @@ autolabel(ax)
 flight.isnull().sum()
 
 
-def missing_value_table(df):
-    mis_val = df.isnull().sum()
-    mis_val_pct = df.isnull().sum() * 100 / len(df)
-    
-    # concatenate two columns
-    mis_val_tbl = pd.concat([mis_val, mis_val_pct], axis = 1)
-    
-    # Rename columns 
-    mis_val_tbl = mis_val_tbl.rename(columns = {"0":"num NAs", "1", ""})
-    
-    print(mis_val_tbl)
-    
+
     
 
 # VARIABLE: YEAR
