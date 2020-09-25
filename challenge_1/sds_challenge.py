@@ -10,6 +10,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+plt.style.use("ggplot2")
+
 # file_path = "\challenge_1"
 win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
 mac_path = "~/Projects/sds_challenge/challenge_1/data/public_flights.csv"
@@ -43,11 +45,11 @@ flight.select_dtypes('object').apply(pd.Series.nunique, axis = 0)
 
 
 # function to print 
-def autolabel(rects):
+def autolabel(rects, col):
     for i, p in enumerate(rects.patches):
         height = p.get_height()
         rects.text(p.get_x()+p.get_width()/2., height + 0.2,\
-            flight["CANCELLED"].value_counts()[i], ha = "center")
+            flight[col].value_counts()[i], ha = "center")
 
 
 # VARIABLE: CANCELLED
@@ -55,13 +57,43 @@ flight["CANCELLED"].value_counts()
 
 # Barplot with labels on top
 ax = sns.countplot(data = flight, x = "CANCELLED")
-autolabel(ax)
+autolabel(ax, "CANCELLED")
 
-flight.isnull().sum()
-
-
-
-    
 
 # VARIABLE: YEAR
 flight["YEAR"].value_counts()
+
+
+# VARIABLE: MONTH
+flight["MONTH"].value_counts()
+sns.countplot(data = flight, x = "MONTH")
+
+# VARIABLE: DAY
+flight["DAY"].value_counts()
+sns.countplot(data = flight, x = "DAY")
+
+# VARIABLE: Week of Day
+flight["DAY_OF_WEEK"].value_counts()
+sns.countplot(data = flight, x = "DAY_OF_WEEK")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
