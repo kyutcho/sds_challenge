@@ -10,7 +10,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-plt.style.use("ggplot2")
+plt.style.use("ggplot")
 
 # file_path = "\challenge_1"
 win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
@@ -63,7 +63,6 @@ autolabel(ax, "CANCELLED")
 # VARIABLE: YEAR
 flight["YEAR"].value_counts()
 
-
 # VARIABLE: MONTH
 flight["MONTH"].value_counts()
 sns.countplot(data = flight, x = "MONTH")
@@ -76,12 +75,20 @@ sns.countplot(data = flight, x = "DAY")
 flight["DAY_OF_WEEK"].value_counts()
 sns.countplot(data = flight, x = "DAY_OF_WEEK")
 
+# VARIABLE: AIRLINE
+flight["AIRLINE"].value_counts()
+sns.countplot(data = flight, x = "AIRLINE")
 
+# VARIABLE: ORIGIN_AIRPORT
+flight["ORIGIN_AIRPORT"].value_counts()
+sns.countplot(data = flight, x = "ORIGIN_AIRPORT")
 
+# VARIABLE: ORIGIN_AIRPORT
+flight["DESTINATION_AIRPORT"].value_counts()
+sns.countplot(data = flight, x = "DESTINATION_AIRPORT")
 
-
-
-
+# VARIABLE: DISTANCE
+sns.displot()
 
 
 
