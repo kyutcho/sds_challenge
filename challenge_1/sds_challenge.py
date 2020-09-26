@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from scipy.stats import norm, skew
 
 plt.style.use("ggplot")
 
@@ -88,7 +89,39 @@ flight["DESTINATION_AIRPORT"].value_counts()
 sns.countplot(data = flight, x = "DESTINATION_AIRPORT")
 
 # VARIABLE: DISTANCE
-sns.displot()
+sns.distplot(flight["DISTANCE"], fit=norm)
+(mu, sigma) = norm.fit(flight["DISTANCE"])
+
+# take log on DISTANCE
+flight["LOG_DISTANCE"] = np.log(flight["DISTANCE"])
+sns.distplot(flight["LOG_DISTANCE"], fit=norm)
+
+# VARIABLE: SCHEDULED_TIME
+sns.distplot(flight["SCHEDULED_TIME"], fit = norm)
+(mu, sigma) = norm.fit(flight["SCHEDULED_TIME"].dropna())
+
+# take log on SCHEDULED_TIME
+flight["LOG_SCHEDULED_TIME"] = np.log(flight["SCHEDULED_TIME"])
+sns.distplot(flight["LOG_SCHEDULED_TIME"], fit=norm)
+
+# Make new variable
+flight["ACTUAL_TIME"] = flight["SCHEDULED_ARRIVAL"] - flight["SCHEDULED_DEPARTURE"]
+
+# ACTUAL_TIME vs SCHEDULED_TIME
+sns.relplot(data = flight, kind = 'scatter', x = "SCHEDULED_TIME", y = "ACTUAL_TIME", hue = "CANCELLED")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
