@@ -109,31 +109,3 @@ flight["ACTUAL_TIME"] = flight["SCHEDULED_ARRIVAL"] - flight["SCHEDULED_DEPARTUR
 
 # ACTUAL_TIME vs SCHEDULED_TIME
 sns.relplot(data = flight, kind = 'scatter', x = "SCHEDULED_TIME", y = "ACTUAL_TIME", hue = "CANCELLED")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
