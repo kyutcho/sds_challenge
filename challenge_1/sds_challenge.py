@@ -16,7 +16,7 @@ plt.style.use("ggplot")
 # file_path = "\challenge_1"
 win_path = "D:/Learning/Projects/sds_challenges/challenge_1/data/public_flights.csv"
 mac_path = "~/Projects/sds_challenge/challenge_1/data/public_flights.csv"
-flight = pd.read_csv(win_path)
+flight = pd.read_csv(mac_path)
 
 print(flight.columns)
 
@@ -25,7 +25,7 @@ print(flight.info())
 # EDA
 def missing_value_table(df):
     mis_val = df.isnull().sum()
-    mis_val_pct = round(df.isnull().sum() * 100 / len(df), 2)
+    mis_val_pct = round(df.isnull().mean()), 2)
     
     # concatenate two columns
     mis_val_tbl = pd.concat([mis_val, mis_val_pct], axis = 1)
