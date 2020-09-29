@@ -108,4 +108,21 @@ sns.distplot(flight["LOG_SCHEDULED_TIME"], fit=norm)
 flight["ACTUAL_TIME"] = flight["SCHEDULED_ARRIVAL"] - flight["SCHEDULED_DEPARTURE"]
 
 # ACTUAL_TIME vs SCHEDULED_TIME
-sns.relplot(data = flight, kind = 'scatter', x = "SCHEDULED_TIME", y = "ACTUAL_TIME", hue = "CANCELLED")
+sns.relplot(data = flight, kind = 'scatter', x = "SCHEDULED_TIME", y = "ACTUAL_TIME",\
+            hue = "CANCELLED")
+
+# Weekday
+fig = plt.figure()
+
+ax2 = ax1.twinx()
+ax1.bar(np.sort(flight["DAY_OF_WEEK"].unique()), \
+         flight["DAY_OF_WEEK"].value_counts().sort_index())
+ax2.bar(np.sort(flight["DAY_OF_WEEK"].unique()), \
+        flight.groupby("DAY_OF_WEEK").agg({"CANCELLED":"sum"})["CANCELLED"])
+plt.show()
+
+
+cancelled_gby_wd = flight.groupby("DAY_OF_WEEK").agg({"CANCELLED":"sum"})
+wd_count = flight["DAY_OF_WEEK"].value_counts().sort_index()
+weekday_dist = pd.concat([cancelled_gby_wd, wd_count], axis = 1)
+weekday_dist.plot(kind = "bar")
