@@ -84,7 +84,7 @@ sns.countplot(data = flight, x = "AIRLINE")
 flight["ORIGIN_AIRPORT"].value_counts()
 sns.countplot(data = flight, x = "ORIGIN_AIRPORT")
 
-# VARIABLE: ORIGIN_AIRPORT
+# VARIABLE: DESTINATION_AIRPORT
 flight["DESTINATION_AIRPORT"].value_counts()
 sns.countplot(data = flight, x = "DESTINATION_AIRPORT")
 
@@ -112,17 +112,12 @@ sns.relplot(data = flight, kind = 'scatter', x = "SCHEDULED_TIME", y = "ACTUAL_T
             hue = "CANCELLED")
 
 # Weekday
-fig = plt.figure()
-
-ax2 = ax1.twinx()
-ax1.bar(np.sort(flight["DAY_OF_WEEK"].unique()), \
-         flight["DAY_OF_WEEK"].value_counts().sort_index())
-ax2.bar(np.sort(flight["DAY_OF_WEEK"].unique()), \
-        flight.groupby("DAY_OF_WEEK").agg({"CANCELLED":"sum"})["CANCELLED"])
-plt.show()
-
-
 cancelled_gby_wd = flight.groupby("DAY_OF_WEEK").agg({"CANCELLED":"sum"})
 wd_count = flight["DAY_OF_WEEK"].value_counts().sort_index()
 weekday_dist = pd.concat([cancelled_gby_wd, wd_count], axis = 1)
-weekday_dist.plot(kind = "bar")
+weekday_dist["CANCELLED RATIO"] = round((weekday_dist["CANCELLED"] / weekday_dist["DAY_OF_WEEK"])*100, 2)
+
+# Origin Airport
+cancelled_gby_oa = flight.groupby("ORIGIN_AIRPORT").agg({"CANCELLED":["sum", "mean"]}).reset_index(col_level = 1)
+cancelled_gby_oa = cancelled_gby_oa.rename(columns = {"sum":"num CANCELLED", "mean":"pct CANCELLED"})
+cancelled_gby_oa.sort_values(by = "pct CANCELLED")
